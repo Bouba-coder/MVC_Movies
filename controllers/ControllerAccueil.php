@@ -1,5 +1,6 @@
 <?php
 //the controllerAccueil
+require_once('views/View.php');
 class controllerAccueil
 {
     private $_moviesManager;
@@ -17,7 +18,10 @@ class controllerAccueil
     {
         $this->_moviesManager = new MoviesManager;
         $movies = $this->_moviesManager->getMovie();
-        require_once('views/viewAccueil.php');
+
+       $this->_view = new View('Accueil');
+       $this->_view->generate(array('movies' => $movies));
+        //require_once('views/viewAccueil.php');
     }
 
 }

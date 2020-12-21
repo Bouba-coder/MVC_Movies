@@ -1,5 +1,4 @@
 <?php
-
 class Router{
     private $_ctrl;
     private $_view;
@@ -17,7 +16,7 @@ class Router{
             {
                 //get the good controller file
                 $url = explode('/', filter_var($_GET['url'], FILTER_SANITIZE_URL));
-                $controller = ucfirst(strtolowor($url[0]));
+                $controller = ucfirst(strtolower($url[0]));
                 $controllerClass ="Controller".$controller;
                 $controllerFile ="controllers/".$controllerClass.".php";
 
