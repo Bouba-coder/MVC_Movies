@@ -6,6 +6,7 @@
     </head>
 
     <header>
+        <h1><a href="<?= URL ?>" >Accueil</a></h1>
         <h1>Tes films et series preférés son sur <a href="https://streamfr.net/" >Streamfr</a></h1>
     </header>
         <?= $content ?>
