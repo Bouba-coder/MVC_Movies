@@ -1,5 +1,7 @@
-<?php>
+<?php
 $this->_t ='Accueil';
+
+?>
 <h1>Films</h1>
 
 
